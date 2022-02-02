@@ -2,11 +2,11 @@
   "name": "portfolio_v2",
   "version": "1.0.0",
   "description": "",
-  "source" : "index.html",
+  "source": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "npx parcel",
-    "build" : "parcel build index.html"
+    "dev": "npx parcel",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/xLeay/portfolio-v2#readme",
   "devDependencies": {
     "parcel": "^2.2.1"
+  },
+  "dependencies": {
+    "illusory": "^2.0.3"
   }
 }
