@@ -11,9 +11,16 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'poppinsregular';
+    font-family: 'poppins';
+    font-weight: 400;
 }
 
+/* Header */
+
+header {
+    height: 90vh;
+}
+/* Nav */
 
 nav {
     display: flex;
@@ -21,7 +28,6 @@ nav {
     align-items: center;
 
     background: #000;
-    border: 10px solid blue;
     
 }
 
@@ -29,16 +35,54 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin: 25px 25px 25px 0;
 }
 
 .buttons-nav a {
     color: white;
     text-decoration: none;
+    font-size: 30px;
 }
 
+/* Black bar */
 
+.black {
+    background: black;
+    padding-left: 25px;
+    /* margin-bottom: 300px; */
+}
 
+h1 {
+    font-size: 64px;
+    font-family: 'poppins';
+    font-weight: 400;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 10px solid white;
+    width: fit-content;
+    color: white;
+}
+
+.headline {
+    font-size: 64px;
+    color: white;
+}
 
 .moving-text {
     display: flex;
+}
+
+/* Main */
+
+
+.Azul, .Calls, .MontSaintMichel {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+}
+
+.Azul p, .Calls p, .MontSaintMichel p {
+    font-weight: 400;
+    font-size: 48px;
 }
