@@ -4,4 +4,41 @@
 @import url("font-face/gilroy/gilroy.css");
 @import url("font-face/retroica/retroica.css");
 
+* {
+    border: 1px solid red;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppinsregular';
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background: #000;
+    border: 10px solid blue;
+    
+}
+
+.buttons-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.moving-text {
+    display: flex;
+}
