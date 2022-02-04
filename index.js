@@ -5,12 +5,12 @@ import { illusory } from 'illusory'
 
 // illusory(start, end)
 
-const hg = document.getElementById('hg');
+const hg = document.getElementById('movetext');
 
 let sl = 0;
 
 function scroll() {
-    sl = sl + 2;
+    sl = sl + 3;
     if (sl >= hg.scrollWidth/2 - 1) {
         sl = 0;
     }
