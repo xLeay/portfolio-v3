@@ -31,6 +31,14 @@ nav {
     justify-content: flex-end;
     align-items: center;
     background: black;
+    height: 77px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+
+    transition: all 0.6s ease-in-out;
 }
 
 .buttons-nav {
@@ -40,35 +48,45 @@ nav {
     margin: 25px 25px 25px 0;
     border: 1px solid red;
     overflow: hidden;
-    /* transform: translateY(0px); */
-    /* transition: transform 500ms ease-in-out 25ms; */
-
-    
 }
 
 .buttons-nav a {
     color: white;
     text-decoration: none;
     font-size: 30px;
-    display:inline-block;
+    display:block;
+    position: relative;
+    transition: font-size 0.6s ease-in-out;
     
 }
 
-.buttons-nav a:hover {
-    /* transform: translateY(-50px);
-    transition: transform 0.5s ease-in; */
+.navv:hover a {
+    animation: navb 0.4s ease-in-out ;
 
-    animation: navb 0.4s ease alternate;
 }
+
+header.scrolled nav {
+    background: #fff;
+    height: 50px;
+}
+
+header.scrolled a {
+    color: black;
+    font-size: 25px;
+}
+
+header.scrolled .black {
+    background: #fff;
+}
+
 
 @keyframes navb {
     0% {transform: translate(0px, 0px); }
-    16% {transform: translate(0px, -50px); }
-    32% {transform: translate(-450px, -50px); }
-    48% {transform: translate(-450px, 50px); }
-    64% {transform: translate(0px, 50px); }
-    100% {transform: translate(0px, 0px); }
+    50% {transform: translate(0px, -50px); }
+    50.0001% {transform: translate(0px, 50px); }
+    100% {transform: translate(0px, 0); }
 }
+
 
 /* Black bar */
 
@@ -76,6 +94,12 @@ nav {
     background: black;
     padding-left: 25px;
     height: 60vh;
+    padding-top: 82px;
+    transition: background 0.6s ease-in-out;
+}
+
+header.scrolled .black h1, header.scrolled .black p {
+    color: black;
 }
 
 h1 {
@@ -87,6 +111,11 @@ h1 {
     border-bottom: 10px solid white;
     width: fit-content;
     color: white;
+
+}
+
+.black h1, .black p {
+    transition: color 0.6s ease-in-out;
 
 }
 
