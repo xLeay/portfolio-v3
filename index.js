@@ -16,12 +16,13 @@ function scroll() {
 }
 window.requestAnimationFrame(scroll);
 
-
 const nav = document.querySelector("header")
 window.addEventListener('scroll', e => {
     if (window.scrollY > 80) {
+        
         nav.classList.add("scrolled")
     } else {
         nav.classList.remove("scrolled")
     }
 })
+
