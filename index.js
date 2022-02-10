@@ -21,40 +21,24 @@ const nav = document.querySelector("header")
 var scrolled = false;
 var lastScrolled = scrolled;
 
+const h1 = document.querySelector("header h1")
+
 window.addEventListener('scroll', e => {
+
+    if (window.scrollY > 65) {
+        nav.classList.remove("no-transition")
+    } else {
+        nav.classList.add("no-transition")
+    }
 
     if (window.scrollY > 80) {
         scrolled = true;
         nav.classList.add("scrolled")
+        h1.style.top = ""
     } else {
         nav.classList.remove("scrolled")
         scrolled = false;
+        h1.style.top = `${100 - window.scrollY}px`
     }
 
-    const start = document.querySelector('#from')
-    const end = document.querySelector('#to')
-    
-    if (scrolled != lastScrolled) {
-        if (scrolled) {
-            setTimeout(() => {
-                illusory(start, end, {
-                    duration: '.5s'
-                })
-            }, 20);
-        } else {
-            setTimeout(() => {
-                illusory(end, start, {
-                    duration: '.5s'
-                })
-            }, 100);
-        }
-    }
-
-    lastScrolled = scrolled;
-})
-
-document.querySelector("#debug").addEventListener('click', () => {
-    const start = document.querySelector('#from')
-    const end = document.querySelector('#to')
-    illusory(start, end)
 });

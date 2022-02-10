@@ -29,7 +29,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     background: black;
     height: 77px;
@@ -150,24 +150,43 @@ h1 {
     font-size: 64px;
     font-family: 'poppins';
     font-weight: 400;
-    padding-bottom: 50px;
-    margin: 0 0 50px 0;
-    border-bottom: 10px solid white;
     width: fit-content;
     color: white;
+
+    margin: 0;
+    position: fixed;
+    left: 25px;
+    top: 100px;
+    z-index: 2;
+
+}
+
+.scrolled h1 {
+    top: 12px;
+    font-size: 25px;
 
 }
 
 .black h1, .black p {
-    transition: color 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
 
+.no-transition h1 {
+    transition: all 0s ease-in;
 }
 
 .headline {
     font-size: 64px;
     color: white;
-    margin: 0;
     line-height: 70px;
+}
+
+.barre {
+    height: 10px;
+    width: 440px;
+    background: white;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 .moving-text {
