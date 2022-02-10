@@ -139,6 +139,7 @@ header.scrolled span {
     padding-left: 25px;
     height: 60vh;
     padding-top: 82px;
+    padding-bottom: 50px;
     transition: background 0.6s ease-in-out;
 }
 
@@ -176,7 +177,7 @@ h1 {
 }
 
 .headline {
-    font-size: 64px;
+    font-size: 56px;
     color: white;
     line-height: 70px;
 }
@@ -199,7 +200,7 @@ h1 {
 main {
     display: flex;
     flex-direction: column;
-    gap: 40vh;
+    gap: 5vh;
 }
 
 
@@ -216,14 +217,14 @@ main {
 
 .azulwrap { 
     display: flex;
-    margin-right: 60px;
+    margin-right: 240px;
     justify-content: flex-end;
 }
 
 .callswrap { 
     display: flex;
     justify-content: flex-start;
-    margin-left: 60px;
+    margin-left: 240px;
 }
 
 .msmwrap {
@@ -235,6 +236,7 @@ main {
     overflow: hidden;
     transition: all 0.5s ease-in-out;
     box-shadow: none;
+    height: 60vh;
 }
 
 .imgwrap:hover {
@@ -287,7 +289,7 @@ footer {
 
 .moving-text p {
     margin: 0 0 10px 0;
-    font-size: 120px;
+    font-size: 100px;
     min-width: fit-content;
 
 }
@@ -308,7 +310,7 @@ footer {
     padding: 50px;
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 100px;
 
 }
 
@@ -317,7 +319,7 @@ footer {
 }
 
 .footer-contact {
-    font-size: 56px;
+    font-size: 50px;
     line-height: 90px;
 }
 
