@@ -21,7 +21,7 @@ const nav = document.querySelector("header")
 var scrolled = false;
 var lastScrolled = scrolled;
 
-const h1 = document.querySelector("#yaelA")
+const h1 = document.querySelector("header h1")
 
 window.addEventListener('scroll', e => {
 

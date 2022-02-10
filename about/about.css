@@ -1,8 +1,8 @@
 /* Font face */ /* Font face */ /* Font face */ /* Font face */ /* Font face */ /* Font face */ /* Font face */ 
 
-@import url("font-face/poppins/poppins.css");
-@import url("font-face/gilroy/gilroy.css");
-@import url("font-face/retroica/retroica.css");
+@import url("../font-face/poppins/poppins.css");
+@import url("../font-face/gilroy/gilroy.css");
+@import url("../font-face/retroica/retroica.css");
 
 /* * {
     border: 1px solid red;
@@ -43,14 +43,19 @@ nav {
     box-shadow: 0 0px 2px black;
 }
 
+.yaelspan {
+    margin-left: 25px;
+    font-size: 30px;
+    transition: font-size 0.5s ease-in-out;
+}
 
-.black a {
+.spanA {
     text-decoration: none;
     color: inherit;
     pointer-events: none;
 }
 
-header.scrolled .black a {
+header.scrolled .spanA {
     pointer-events: auto;
 }
 
@@ -114,6 +119,10 @@ header.scrolled .black {
     background: #fff;
 }
 
+header.scrolled span {
+    color: black;
+    font-size: 25px;
+}
 
 @keyframes navb {
     0% {transform: translate(0px, 0px); }
@@ -134,11 +143,11 @@ header.scrolled .black {
     transition: background 0.6s ease-in-out;
 }
 
-header.scrolled .black #yaelA, header.scrolled .black p {
+header.scrolled .black h1, header.scrolled .black p {
     color: black;
 }
 
-#yaelA {
+h1 {
     font-size: 64px;
     font-family: 'poppins';
     font-weight: 400;
@@ -153,17 +162,17 @@ header.scrolled .black #yaelA, header.scrolled .black p {
 
 }
 
-.scrolled #yaelA {
+.scrolled h1 {
     top: 12px;
     font-size: 25px;
 
 }
 
-.black #yaelA, .black p {
+.black h1, .black p {
     transition: all 0.6s ease-in-out;
 }
 
-.no-transition #yaelA {
+.no-transition h1 {
     transition: all 0s ease-in;
 }
 
@@ -297,12 +306,11 @@ footer {
 }
 
 .foot {
-
     background: black;
     padding: 50px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 100px;
 
 }
 
