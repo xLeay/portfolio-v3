@@ -21,7 +21,6 @@ const nav = document.querySelector("header")
 var scrolled = false;
 var lastScrolled = scrolled;
 
-const h1 = document.querySelector("header h1")
 
 window.addEventListener('scroll', e => {
 
@@ -34,11 +33,11 @@ window.addEventListener('scroll', e => {
     if (window.scrollY > 80) {
         scrolled = true;
         nav.classList.add("scrolled")
-        h1.style.top = ""
+        
     } else {
         nav.classList.remove("scrolled")
         scrolled = false;
-        h1.style.top = `${100 - window.scrollY}px`
+        
     }
 
 });
