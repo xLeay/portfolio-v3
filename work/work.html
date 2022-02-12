@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="work.css">
     <title>Junior Developper portfolio</title>
     <meta name="description" content="Ce site est un portfolio">
 </head>
@@ -17,10 +17,10 @@
 
             <div class="buttons-nav">
                 <div class="navv">
-                    <a href="about.html">About</a>
+                    <a href="../about/about.html">About</a>
                 </div>
                 <div class="navv">
-                    <a href="../work/work.html">Work</a>
+                    <a href="work.html">Work</a>
                 </div>
                 <div class="navv">
                     <a href="../skills/skills.html">Skills</a>
@@ -31,29 +31,45 @@
             </div>
         </nav>
         <div class="black">
-            <h1>About</h1>
+            <h1>Work</h1>
 
             <div class="barre"></div>
-            
-            <p class="headline">Who I am.</p>
+
+            <p class="headline">Here are all of my projects and works.</p>
         </div>
     </header>
 
-    <main>
-        <div class="aboutwrap">
-            <div class="about">
-                <p>I'm a 18 year old student in <br> Computer Science in <br> <span> <a href="https://www.univ-gustave-eiffel.fr/en/" target="_blank"> Université Gustave Eiffel</a></span>. </p>
+
+    <!-- <main> -->
+    <div class="container">
+        <div class="slider">
+            
+            <img src="../img/azul.png" alt="Azul" class="active" height="600px">
+            <img src="../img/calls.png" alt="Calls tribute" height="600px">
+            <img src="../img/MontJour.png" alt="Mont-Saint-Michel" height="600px">
+
+        </div>
+
+        <div class="btn-cont">
+            <div class="btn-nav left">
+                <svg width="30" height="80" viewBox="0 0 491 853" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M472.248 19.7042C484.246 31.7059 490.986 47.9816 490.986 64.9521C490.986 81.9227 484.246 98.1984 472.248 110.2L155.448 427L472.248 743.8C483.906 755.871 490.357 772.037 490.211 788.818C490.065 805.598 483.335 821.65 471.469 833.517C459.602 845.383 443.55 852.113 426.77 852.259C409.989 852.405 393.823 845.954 381.752 834.296L19.7041 472.248C7.706 460.246 0.96582 443.971 0.96582 427C0.96582 410.03 7.706 393.754 19.7041 381.752L381.752 19.7042C393.754 7.70601 410.03 0.96582 427 0.96582C443.971 0.96582 460.246 7.70601 472.248 19.7042Z"
+                        fill="currentColor" />
+                </svg>
+            </div>
+            <div class="btn-nav right">
+                <svg width="30" height="80" viewBox="0 0 491 853" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.752 19.7039C6.75387 31.7057 0.0136719 47.9814 0.0136719 64.9519C0.0136719 81.9224 6.75387 98.1981 18.752 110.2L335.552 427L18.752 743.8C7.0939 755.87 0.64303 772.037 0.788849 788.818C0.934668 805.598 7.6655 821.65 19.5316 833.516C31.3977 845.382 47.4497 852.113 64.2303 852.259C81.0109 852.405 97.1774 845.954 109.248 834.296L471.296 472.248C483.294 460.246 490.034 443.97 490.034 427C490.034 410.029 483.294 393.754 471.296 381.752L109.248 19.7039C97.2462 7.70576 80.9705 0.965576 64 0.965576C47.0295 0.965576 30.7538 7.70576 18.752 19.7039Z"
+                        fill="currentColor" />
+                </svg>
             </div>
         </div>
 
-        <p class="career">My Career.</p>
+    </div>
 
-        <div class="aboutwrap">
-            <div class="about careerdiv">
-                <p>I have obtained my <span> high <br> school diploma </span> in 2021 and <br> I’m in my first year of a <br> bachelor in Computer <br> Science.</p>
-            </div>
-        </div>
-    </main>
+    <!-- </main> -->
 
 
     <footer>
@@ -104,7 +120,7 @@
     </footer>
 
 
-    <script src="about.js" type="module"></script>
+    <script src="work.js" type="module"></script>
 </body>
 
 </html>

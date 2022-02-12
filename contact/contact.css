@@ -1,0 +1,318 @@
+/* Font face */ /* Font face */ /* Font face */ /* Font face */ /* Font face */ /* Font face */ /* Font face */ 
+
+@import url("../font-face/poppins/poppins.css");
+@import url("../font-face/gilroy/gilroy.css");
+@import url("../font-face/retroica/retroica.css");
+
+/* * {
+    border: 1px solid red;
+} */
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    font-weight: 400;
+}
+
+/* Header */ /* Header */ /* Header */ /* Header */ /* Header */ /* Header */ /* Header */ 
+
+/* header {
+    height: 70vh;
+} */
+
+/* Nav */ /* Nav */ /* Nav */ /* Nav */ /* Nav */ /* Nav */ /* Nav */ 
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: black;
+    height: 77px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0px 2px black;
+}
+
+h1 {
+    font-size: 64px;
+    font-family: 'poppins';
+    font-weight: 400;
+    width: fit-content;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 100px;
+    transition: color 0.2s ease-in-out;
+}
+
+.black a {
+    text-decoration: none;
+    color: inherit;
+    pointer-events: none;
+}
+
+.buttons-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 25px 25px 25px 0;
+    overflow: hidden;
+}
+
+.yaelnav {
+    font-size: 30px;
+    transition: all 0.6s ease-in-out;
+}
+
+.buttons-nav a, #yaelA {
+    color: white;
+    text-decoration: none;
+    display:block;
+    position: relative;
+}
+
+.navv a {
+
+    font-size: 30px;
+
+    color: white;
+    line-height:1.5em;
+    border-bottom: 1px solid transparent;
+
+    transition: color 0.2s ease-in-out, 
+    border-color 0.4s cubic-bezier(1, 0, 0, 1),
+
+    font-size 0.6s ease-in-out;
+}
+
+.navv:hover a {
+    color: #888;
+    border-color: white;
+    animation: navb 0.6s cubic-bezier(1, 0, 0, 1) ;
+}
+
+header.scrolled .navv a { border-color: white; }
+header.scrolled .navv:hover a { border-color: black; }
+
+header.scrolled nav {
+    background: #fff;
+    height: 50px;
+    display: flex;
+}
+
+header.scrolled a {
+    color: black;
+    font-size: 25px;
+}
+
+header.scrolled .black {
+    background: #fff;
+}
+
+header.scrolled .black h1 {
+    color: black;
+}
+
+@keyframes navb {
+    0% {transform: translate(0px, 0px); }
+    50% {transform: translate(0px, -50px); }
+    50.0001% {transform: translate(0px, 50px); }
+    100% {transform: translate(0px, 0); }
+}
+
+
+/* Black bar */ /* Black bar */ /* Black bar */ /* Black bar */ /* Black bar */ /* Black bar */ /* Black bar */ 
+
+.black {
+    background: black;
+    padding-left: 25px;
+    padding-top: 82px;
+    padding-bottom: 50px;
+    transition: background 0.6s ease-in-out;
+}
+
+header.scrolled #yaelA, header.scrolled .black p {
+    color: black;
+}
+
+
+.black p {
+    transition: all 0.6s ease-in-out;
+}
+
+.headline {
+    font-size: 56px;
+    color: white;
+    line-height: 70px;
+}
+
+.barre {
+    height: 10px;
+    width: 440px;
+    background: white;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.moving-text {
+    display: flex;
+}
+
+/* Main */ /* Main */ /* Main */ /* Main */ /* Main */ /* Main */ /* Main */ 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 25vh;
+    position: relative;
+    margin: 25px; 
+    padding: 0;
+
+}
+
+main:nth-child(1) {
+    position: absolute;
+    top: 0;
+}
+
+.aboutwrap {
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    font-weight: 400;
+    font-size: 72px;
+    width: fit-content;
+    margin-top: 1.1em; /* --------------------------------------------------------------------------------------------------- */
+    line-height: 90px;
+}
+
+.about a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.about a:hover {
+    color: #888;
+}
+
+
+.about span {
+    font-weight: 700;
+}
+.career {
+    position: absolute;
+    top: 45%;
+    font-size: 56px;
+}
+
+.careerdiv {
+    padding-top: 250px;
+}
+
+/* Footer */ /* Footer */ /* Footer */ /* Footer */ /* Footer */ /* Footer */ /* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+}
+
+.moving-text {
+    margin-bottom: 300px;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.moving-text p {
+    margin: 0 0 10px 0;
+    font-size: 100px;
+    min-width: fit-content;
+
+}
+
+.mail {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+}
+
+.mail:hover {
+    color: #888;
+}
+
+.foot {
+
+    background: black;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.foot p, address {
+    color: white;
+}
+
+.footer-contact {
+    font-size: 50px;
+    line-height: 90px;
+}
+
+address {
+    margin-top: 50px;
+    font-size: 30px;
+    line-height: 40px;
+    font-style: normal;
+}
+
+.contact-me {
+    font-family: 'gilroybold';
+}
+
+svg {
+    color: white;
+    transition: color 0.2s ease;
+}
+
+svg:hover {
+    color: #888;
+}
+
+.bottfoot {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+.yael {
+    font-size: 48px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logos {
+    display: flex;
+    gap: 40px;
+}
