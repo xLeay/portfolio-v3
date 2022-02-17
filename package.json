@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/xLeay/portfolio-v2#readme",
   "devDependencies": {
-    "parcel": "^2.2.1"
+    "parcel": "^2.2.1",
+    "sharp": "^0.29.3"
   },
   "dependencies": {
     "illusory": "^2.0.3"

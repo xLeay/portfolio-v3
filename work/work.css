@@ -421,3 +421,29 @@ svg:hover {
     display: flex;
     gap: 40px;
 }
+
+
+
+.dd {
+    display: flex;
+    justify-content: center;
+}
+.test {
+    display: flex;
+    /* justify-content: center; */
+    gap: 50px;
+    border: 1px solid #000;
+    padding: 50px;
+    overflow-x: scroll;
+    width: 700px;
+
+    scroll-snap-type: x mandatory;
+}
+
+.test img {
+    border: 10px solid red;
+    height: 500px;
+    min-width: 600px;
+
+    scroll-snap-align: center;
+}
