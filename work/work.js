@@ -52,6 +52,9 @@ const right = document.querySelector('.right');
 const scrollctn = document.querySelector('.slider');
 
 left.addEventListener('click', e => {
+
+    console.log(scrollctn.scrollLeft);
+    
     scrollctn.scrollLeft -= scrollctn.scrollWidth;
     // scrollctn.scrollTo({
     //     top: 0,
