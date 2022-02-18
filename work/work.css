@@ -221,39 +221,76 @@ main {
 
 
 
+
+
+/* .dd {
+    display: flex;
+    justify-content: center;
+} */
+
+/* .test {
+    display: flex; */
+    /* justify-content: ; */
+    /* gap: 50px;
+    border: 1px solid #000;
+    padding: 50px;
+    overflow-x: scroll;
+    width: 900px;
+
+    scroll-snap-type: x mandatory;
+}  */
+
+/* .test img {
+    border: 10px solid red;
+    height: auto;
+    min-width: auto;
+    margin: 0 100px;
+
+    scroll-snap-align: center;
+} */
+
+.azulimg {
+    padding-left: 100px;
+}
+
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 15vh auto;
     padding: 50px;
     border: 1px solid #eee;
     border-radius: 4px;
-    /* inset 0px 0px 10px 0 #eee, */
-
     box-shadow:
     inset 30px 30px 60px #f7f7f7;
-        
-    overflow: hidden;
-
+    
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .slider {
     display: flex;
     align-items: center;
-
     margin-bottom: 40px;
+    overflow-x: scroll;
+    width: 900px;
+
+    scroll-snap-type: x mandatory;
 }
 .slider img {
-    max-width: 100%;
-    display: none;
-    border-radius: 6px;
+    border-radius: 4px;
+    height: auto;
+    min-width: auto;
+
+    scroll-snap-align: center;
+    margin: 0 100px;
 }
 
-img.active {
-    display: block;
-}
+/* ::-webkit-scrollbar {
+    height: 8px;
+    overflow: visible;
+    width: 8px;
+} */
 
 @keyframes fadein {
     0% {
@@ -312,6 +349,8 @@ img.active {
 .btn-nav {
     margin: 5px 40px;
     cursor: pointer;
+    background: transparent;
+    border: none;
 }
 
 .btn-nav svg {
@@ -423,27 +462,3 @@ svg:hover {
 }
 
 
-
-.dd {
-    display: flex;
-    justify-content: center;
-}
-.test {
-    display: flex;
-    /* justify-content: center; */
-    gap: 50px;
-    border: 1px solid #000;
-    padding: 50px;
-    overflow-x: scroll;
-    width: 700px;
-
-    scroll-snap-type: x mandatory;
-}
-
-.test img {
-    border: 10px solid red;
-    height: 500px;
-    min-width: 600px;
-
-    scroll-snap-align: center;
-}

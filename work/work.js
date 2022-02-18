@@ -46,58 +46,26 @@ window.addEventListener('scroll', e => {
 
 
 /* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */
-// const items = document.querySelectorAll('img');
-// const nbSlide = items.length;
-// const suivant = document.querySelector('.right');
-// const precedent = document.querySelector('.left');
-// let count = 0;
 
-// function slideSuivante() {
+const left = document.querySelector('.left');
+const right = document.querySelector('.right');
+const scrollctn = document.querySelector('.slider');
 
-    
-//     items[count].classList.remove('active');
+left.addEventListener('click', e => {
+    scrollctn.scrollLeft -= scrollctn.scrollWidth;
+    // scrollctn.scrollTo({
+    //     top: 0,
+    //     left: scrollctn.scrollLeft -= scrollctn.innerWidth,
+    //     behavior: 'smooth'
+    // })
 
-//     if (count < nbSlide - 1) {
-//         count++;
-//     } else {
-//         count = 0;
-//     }
-
-//     items[count].classList.add('active');
-
-//     items[count].style.animation = "fadein 5s cubic-bezier(.38,.09,.24,1.08) 1 both";
-// }
-// suivant.addEventListener('click', slideSuivante);
+    console.log(scrollctn.scrollLeft);
+})
 
 
-// function slidePrecedente(){
+right.addEventListener('click', e => {
+  scrollctn.scrollLeft += scroll.innerWidth;
+})
 
-    
-//     items[count].classList.remove('active');
-
-//     if(count > 0){
-//         count--;
-//     } else {
-//         count = nbSlide - 1;
-//     }
-
-//     items[count].classList.add('active');
-
-//     items[count].style.animation = "fadeout 5s cubic-bezier(.38,.09,.24,1.08) 1 both";
-
-// }
-// precedent.addEventListener('click', slidePrecedente);
-
-// function keyPress(e) {
-//     if (e.keyCode === 37) {
-//         slidePrecedente();
-//     } else if (e.keyCode === 39) {
-//         slideSuivante();
-//     }
-// }
-
-// document.addEventListener('keydown', keyPress);
-
-// setInterval(slideSuivante, 5000);
 /* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */
 
