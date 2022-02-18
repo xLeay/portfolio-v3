@@ -222,36 +222,9 @@ main {
 
 
 
-
-/* .dd {
-    display: flex;
-    justify-content: center;
-} */
-
-/* .test {
-    display: flex; */
-    /* justify-content: ; */
-    /* gap: 50px;
-    border: 1px solid #000;
-    padding: 50px;
-    overflow-x: scroll;
-    width: 900px;
-
-    scroll-snap-type: x mandatory;
-}  */
-
-/* .test img {
-    border: 10px solid red;
-    height: auto;
-    min-width: auto;
-    margin: 0 100px;
-
-    scroll-snap-align: center;
-} */
-
-.azulimg {
+/* .azulimg {
     padding-left: 100px;
-}
+} */
 
 .container {
     max-width: 1000px;
@@ -286,11 +259,18 @@ main {
     margin: 0 100px;
 }
 
-/* ::-webkit-scrollbar {
+.imgwrap {
+    /* border: 1px solid #000; */
+    min-width: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+::-webkit-scrollbar {
     height: 8px;
     overflow: visible;
     width: 8px;
-} */
+}
 
 @keyframes fadein {
     0% {

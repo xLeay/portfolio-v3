@@ -54,9 +54,12 @@ const scrollctn = document.querySelector('.slider');
 // const calls = document.querySelector('#calls');
 // const msm = document.querySelector('#msm');
 
+
+
+
 left.addEventListener('click', e => {
 
-    console.log(scrollctn.scrollLeft);
+    // console.log(scrollctn.scrollLeft);
 
     // scrollctn.scrollLeft -= scrollctn.scrollWidth;
     // scrollctn.scrollTo({
@@ -75,11 +78,11 @@ left.addEventListener('click', e => {
 
 right.addEventListener('click', e => {
         
-    console.log(scrollctn.scrollLeft);
-        // SCROLLTO ID DE LIMG
+    // console.log(scrollctn.scrollLeft);
+
     scrollctn.scrollBy({
         top: 0,
-        left: +1,
+        left: +50,
         behavior: 'smooth'
       })
 
@@ -90,20 +93,9 @@ right.addEventListener('click', e => {
             left: scrollctn.scrollWidth,
             behavior: 'smooth'
         })
-
     }
 
-    function getYPosition(){
-        var top  = window.pageYOffset || document.documentElement.scrollTop
-        return top;
-    }
-
-    // if (getYPosition = )
-    // TODO Si j'ai la position de fin, je passe au début donc sur img Azul
-    
-
-    console.log(getYPosition());
 })
 
-/* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */
 
+/* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */
