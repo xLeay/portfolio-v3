@@ -50,24 +50,59 @@ window.addEventListener('scroll', e => {
 const left = document.querySelector('.left');
 const right = document.querySelector('.right');
 const scrollctn = document.querySelector('.slider');
+// const azul = document.querySelector('#azul');
+// const calls = document.querySelector('#calls');
+// const msm = document.querySelector('#msm');
 
 left.addEventListener('click', e => {
 
     console.log(scrollctn.scrollLeft);
-    
-    scrollctn.scrollLeft -= scrollctn.scrollWidth;
+
+    // scrollctn.scrollLeft -= scrollctn.scrollWidth;
     // scrollctn.scrollTo({
     //     top: 0,
-    //     left: scrollctn.scrollLeft -= scrollctn.innerWidth,
+    //     left: scrollctn.scrollLeft -= scrollctn.scrollWidth,
     //     behavior: 'smooth'
     // })
 
-    console.log(scrollctn.scrollLeft);
+    scrollctn.scrollBy({
+        top: 0,
+        left: -50,
+        behavior: 'smooth'
+      })
 })
 
 
 right.addEventListener('click', e => {
-  scrollctn.scrollLeft += scroll.innerWidth;
+        
+    console.log(scrollctn.scrollLeft);
+        // SCROLLTO ID DE LIMG
+    scrollctn.scrollBy({
+        top: 0,
+        left: +1,
+        behavior: 'smooth'
+      })
+
+    if (scrollctn.scrollLeft != 0) {
+
+        scrollctn.scrollBy({
+            top: 0,
+            left: scrollctn.scrollWidth,
+            behavior: 'smooth'
+        })
+
+    }
+
+    function getYPosition(){
+        var top  = window.pageYOffset || document.documentElement.scrollTop
+        return top;
+    }
+
+    // if (getYPosition = )
+    // TODO Si j'ai la position de fin, je passe au début donc sur img Azul
+    
+
+    console.log(getYPosition());
 })
 
 /* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */ /* IMAGE SLIDER */
