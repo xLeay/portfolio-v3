@@ -98,7 +98,7 @@ h1 {
 .navv:hover a {
     color: #888;
     border-color: white;
-    animation: navb 0.6s cubic-bezier(1, 0, 0, 1) ;
+    animation: navb 0.45s cubic-bezier(1, 0, 0, 1) ;
 }
 
 header.scrolled .navv a { border-color: white; }
