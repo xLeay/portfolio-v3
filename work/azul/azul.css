@@ -46,19 +46,13 @@ nav {
 h1 {
     font-size: 64px;
     font-family: 'poppins';
-    font-weight: 400;
+    font-weight: 800;
     width: fit-content;
     color: white;
-    margin: 0;
+    margin: 225px 0 0 0;
     position: absolute;
     top: 100px;
     transition: color 0.2s ease-in-out;
-}
-
-.black a {
-    text-decoration: none;
-    color: inherit;
-    pointer-events: none;
 }
 
 .buttons-nav {
@@ -135,19 +129,15 @@ header.scrolled .black h1 {
 
 .black {
     background: black;
-    padding-left: 25px;
-    padding-top: 82px;
-    padding-bottom: 50px;
+    padding: 0vh 0 50vh 0;
     transition: background 0.6s ease-in-out;
+
+    display: flex;
+    justify-content: center;
 }
 
 header.scrolled #yaelA, header.scrolled .black p {
     color: black;
-}
-
-
-.black p {
-    transition: all 0.6s ease-in-out;
 }
 
 .headline {
@@ -156,193 +146,43 @@ header.scrolled #yaelA, header.scrolled .black p {
     line-height: 70px;
 }
 
-.barre {
-    height: 10px;
-    width: 440px;
-    background: white;
-    margin-top: 150px;
-    margin-bottom: 50px;
-}
-
 .moving-text {
     display: flex;
 }
 
+
+
 /* Main */ /* Main */ /* Main */ /* Main */ /* Main */ /* Main */ /* Main */
 
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 25vh;
-    position: relative;
-    margin: 25px; 
-    padding: 0;
-
-}
-
-.aboutwrap {
-    display: flex;
-    justify-content: center;
-}
-
-.about {
-    font-weight: 400;
-    font-size: 72px;
-    width: fit-content;
-    margin-top: 1.1em;
-    line-height: 90px;
-}
-
-.about a {
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s ease;
-}
-
-.about a:hover {
-    color: #888;
-}
-
-
-.about span {
-    font-weight: 700;
-}
-.career {
-    position: absolute;
-    top: 45%;
-    font-size: 56px;
-}
-
-.careerdiv {
-    padding-top: 250px;
-}
-
-
-
-
-
-
-/* .azulimg {
-    padding-left: 100px;
-} */
-
-.container {
-    max-width: 1000px;
-    margin: 15vh auto;
-    padding: 50px;
-    border: 1px solid #eee;
-    border-radius: 4px;
-    box-shadow:
-    inset 30px 30px 60px #f7f7f7;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-    overflow-x: scroll;
-    width: 900px;
-
-    scroll-snap-type: x mandatory;
-}
-.slider img {
-    border-radius: 4px;
-    height: auto;
-    min-width: auto;
-
-    scroll-snap-align: center;
-    margin: 0 100px;
-}
-
 .imgwrap {
-    /* border: 1px solid #000; */
-    min-width: 900px;
+    margin-top: 20vh;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../img/azul_blur.png?as=webp&quality=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.text {
+    margin: 400px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.video {
     display: flex;
     justify-content: center;
 }
 
-::-webkit-scrollbar {
-    height: 8px;
-    overflow: visible;
-    width: 8px;
+.video video {
+    width: 50%;
 }
-
-@keyframes fadein {
-    0% {
-        transform: translateX(900px);
-    }
-
-    20%, 25% {
-        transform: translateX(0);
-    }
-
-    20.5% {
-        transform: translateX(1px);
-    }
-
-    80% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-900px);
-    }
-}
-
-@keyframes fadeout {
-    0% {
-        transform: translateX(-900px);
-    }
-
-    20%, 25% {
-        transform: translateX(0);
-    }
-
-    20.5% {
-        transform: translateX(-1px);
-    }
-
-    80% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(900px);
-    }
-}
-
-.btn-cont {
-    width: 85%;
-    height: auto;
-    /* border: 1px solid #eee; */
-    border-radius: 8px;
-    box-shadow:
-    5px 5px 27px #eee,
-    -5px -5px 27px #ffffff;
-    display: flex;
-    justify-content: center;
-}
-
-.btn-nav {
-    margin: 5px 40px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-}
-
-.btn-nav svg {
-    color: #cacaca;
-    transition: color 0.4s ease;
-}
-
-.btn-nav svg:hover {
-    color: #888;
-}
-
-
 
 
 /* Footer */ /* Footer */ /* Footer */ /* Footer */ /* Footer */ /* Footer */ /* Footer */
@@ -440,5 +280,3 @@ svg:hover {
     display: flex;
     gap: 40px;
 }
-
-
