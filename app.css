@@ -1,12 +1,7 @@
-/* Font face */ /* Font face */ /* Font face */ /* Font face */ /* Font face */ /* Font face */ /* Font face */ 
+@import url("font-face/poppins/poppins.css");
+@import url("font-face/gilroy/gilroy.css");
+@import url("font-face/retroica/retroica.css");
 
-@import url("../font-face/poppins/poppins.css");
-@import url("../font-face/gilroy/gilroy.css");
-@import url("../font-face/retroica/retroica.css");
-
-/* * {
-    border: 1px solid red;
-} */
 
 html {
     overflow-x: hidden;
@@ -19,13 +14,17 @@ body {
     font-weight: 400;
 }
 
-/* Header */ /* Header */ /* Header */ /* Header */ /* Header */ /* Header */ /* Header */ 
+
+/* Header Header Header Header Header Header Header Header Header Header Header Header */
+/* Header Header Header Header Header Header Header Header Header Header Header Header */
 
 /* header {
     height: 70vh;
 } */
 
-/* Nav */ /* Nav */ /* Nav */ /* Nav */ /* Nav */ /* Nav */ /* Nav */ 
+
+/* Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav */
+/* Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav */
 
 nav {
     display: flex;
@@ -131,7 +130,8 @@ header.scrolled .black h1 {
 }
 
 
-/* Black bar */ /* Black bar */ /* Black bar */ /* Black bar */ /* Black bar */ /* Black bar */ /* Black bar */ 
+/* Black-bar Black-bar Black-bar Black-bar Black-bar Black-bar Black-bar Black-bar Black-bar Black-bar */ 
+/* Black-bar Black-bar Black-bar Black-bar Black-bar Black-bar Black-bar Black-bar Black-bar Black-bar */ 
 
 .black {
     background: black;
@@ -168,7 +168,9 @@ header.scrolled #yaelA, header.scrolled .black p {
     display: flex;
 }
 
-/* Main */ /* Main */ /* Main */ /* Main */ /* Main */ /* Main */ /* Main */
+
+/* Main Main Main Main Main Main Main Main Main Main Main Main Main Main Main Main */
+/* Main Main Main Main Main Main Main Main Main Main Main Main Main Main Main Main */
 
 main {
     display: flex;
@@ -177,175 +179,14 @@ main {
     position: relative;
     margin: 25px; 
     padding: 0;
-
-}
-
-.aboutwrap {
-    display: flex;
-    justify-content: center;
-}
-
-.about {
-    font-weight: 400;
-    font-size: 72px;
-    width: fit-content;
-    margin-top: 1.1em;
-    line-height: 90px;
-}
-
-.about a {
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s ease;
-}
-
-.about a:hover {
-    color: #888;
-}
-
-
-.about span {
-    font-weight: 700;
-}
-.career {
-    position: absolute;
-    top: 45%;
-    font-size: 56px;
-}
-
-.careerdiv {
-    padding-top: 250px;
 }
 
 
 
 
 
-
-/* .azulimg {
-    padding-left: 100px;
-} */
-
-.container {
-    max-width: 1000px;
-    margin: 15vh auto;
-    padding: 50px;
-    border: 1px solid #eee;
-    border-radius: 4px;
-    box-shadow:
-    inset 30px 30px 60px #f7f7f7;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-    overflow-x: scroll;
-    width: 900px;
-
-    scroll-snap-type: x mandatory;
-}
-.slider img {
-    border-radius: 4px;
-    height: auto;
-    min-width: auto;
-
-    scroll-snap-align: center;
-    margin: 0 100px;
-}
-
-.imgwrap {
-    /* border: 1px solid #000; */
-    min-width: 900px;
-    display: flex;
-    justify-content: center;
-}
-
-::-webkit-scrollbar {
-    height: 8px;
-    overflow: visible;
-    width: 8px;
-}
-
-@keyframes fadein {
-    0% {
-        transform: translateX(900px);
-    }
-
-    20%, 25% {
-        transform: translateX(0);
-    }
-
-    20.5% {
-        transform: translateX(1px);
-    }
-
-    80% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-900px);
-    }
-}
-
-@keyframes fadeout {
-    0% {
-        transform: translateX(-900px);
-    }
-
-    20%, 25% {
-        transform: translateX(0);
-    }
-
-    20.5% {
-        transform: translateX(-1px);
-    }
-
-    80% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(900px);
-    }
-}
-
-.btn-cont {
-    width: 85%;
-    height: auto;
-    /* border: 1px solid #eee; */
-    border-radius: 8px;
-    box-shadow:
-    5px 5px 27px #eee,
-    -5px -5px 27px #ffffff;
-    display: flex;
-    justify-content: center;
-}
-
-.btn-nav {
-    margin: 5px 40px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-}
-
-.btn-nav svg {
-    color: #cacaca;
-    transition: color 0.4s ease;
-}
-
-.btn-nav svg:hover {
-    color: #888;
-}
-
-
-
-
-/* Footer */ /* Footer */ /* Footer */ /* Footer */ /* Footer */ /* Footer */ /* Footer */
+/* Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer */
+/* Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer */
 
 footer {
     display: flex;
@@ -390,7 +231,8 @@ footer {
 
 }
 
-.foot p, address {
+.foot p,
+address {
     color: white;
 }
 
@@ -440,5 +282,3 @@ svg:hover {
     display: flex;
     gap: 40px;
 }
-
-
