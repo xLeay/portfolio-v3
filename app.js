@@ -1,21 +1,20 @@
-const sectionAzul = document.querySelector('.azul');
+const sectionAzul = document.querySelector('.js-azul');
 const stickyAzul = document.querySelector('.js-image_azul');
-const sectionCalls = document.querySelector('.calls');
+const sectionCalls = document.querySelector('.js-calls');
 const stickyCalls = document.querySelector('.js-image_calls');
-const sectionMsm = document.querySelector('.msm');
+const sectionMsm = document.querySelector('.js-msm');
 const stickyMsm = document.querySelector('.js-image_msm');
-const body = document.querySelector('body');
-const scrollToTop = document.querySelector('.goTop');
+const body = document.querySelector('.js-body');
 const menuIcon = document.querySelector('.menu-icon');
 const menuIconActive = document.querySelector('.menu-icon-active');
 const nav = document.querySelector('nav');
 const navActive = document.querySelector('.nav-active');
+const normalwrap = document.querySelector('.normalwrap');
 let menuToggled = false;
 
 
-
-body.style.backgroundColor = ' var(--background)';
-scrollToTop.style.transform = 'translateY(200%)';
+console.log(window.scrollY);
+body.style.backgroundColor = 'var(--background)';
 
 
 [menuIcon, menuIconActive].forEach(menu => {
@@ -36,49 +35,37 @@ scrollToTop.style.transform = 'translateY(200%)';
             menuToggled = false;
         }
     });
-
 });
 
-window.addEventListener('scroll', function () {
+body.addEventListener('scroll', function () {
 
     console.clear();
-    console.log(window.scrollY);
-    // scrollToTop.innerHTML = window.scrollY;
+    console.log(body.scrollTop);
 
-    if (window.scrollY >= 400) {
-        scrollToTop.style.transition = 'transform 0.2s ease';
-        scrollToTop.style.transform = 'translateY(0%)';
-    }
-
-    else if (window.scrollY <= 400) {
-        scrollToTop.style.transform = 'translateY(200%)';
-    }
-
-    if (window.scrollY >= 650) {
+    if (body.scrollTop >= 750) {
         addSticky(stickyAzul);
         body.style.backgroundColor = '#ff000015';
     }
 
-    else if (window.scrollY <= 650) {
+    else if (body.scrollTop <= 750) {
         removeSticky(stickyAzul);
         body.style.backgroundColor = 'var(--background)';
     }
 
-    if (window.scrollY >= 1750) {
+    if (body.scrollTop >= 1850) {
         addSticky(stickyCalls);
         body.style.backgroundColor = '#0000001a';
     }
 
-    else if (window.scrollY <= 2850) {
+    else if (body.scrollTop <= 2950) {
         removeSticky(stickyCalls);
     }
 
-    if (window.scrollY >= 2850) {
+    if (body.scrollTop >= 2950) {
         removeSticky(stickyAzul);
         removeSticky(stickyCalls);
         body.style.backgroundColor = '#00b3ff17';
     }
-
 });
 
 function isSticky(stickyDiv) {
@@ -101,11 +88,3 @@ function removeSticky(stickyDiv) {
     stickyDiv.style.removeProperty('top');
     stickyDiv.style.removeProperty('right');
 }
-
-
-scrollToTop.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
